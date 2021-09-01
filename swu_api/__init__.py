@@ -6,6 +6,8 @@ departure_url = "https://echtzeit.swu.de/api/TDI/StopPassage?StopNumber={stop_id
 stops = {}
 shortcuts = {"hbf": 1008}
 
+get_stop_name = stops.get
+
 def get_stop_id(search_str):
     # make sure that we get a string
     if not type(search_str) == str:
